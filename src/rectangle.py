@@ -150,6 +150,9 @@ class Rectangle:
 
         self._parent = value
 
+    def cookie_cutter(self, img: np.ndarray):
+        return img[self.top:self.bottom, self.left:self.right]
+
     def screenshot(self):
         hdesktop = win32gui.GetDesktopWindow()
         hwndDC = win32gui.GetWindowDC(hdesktop)

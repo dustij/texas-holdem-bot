@@ -12,6 +12,7 @@ from loguru import logger
 from PIL import Image
 
 from conf import YamlConf
+from hand import Hand
 from managers import WindowManager, CaptureManager
 from window import WindowCapture, WindowElement
 from events import HandEvents, HandListener, HandState, BoardEvents, BoardListener, BoardState
@@ -26,16 +27,17 @@ class BotOutput:
     fps = 0
     hand_state = HandState.SITTING_OUT
     hole_cards = []
+    hand = None
     board_state = BoardState.PREFLOP
     community_cards = []
 
     def print(self):
-        UP = "\x1B[7A"
+        UP = "\x1B[8A"
         CLR = "\x1B[0K"
         HIDE_CURSOR = '\033[?25l'
 
         left_width = 20
-        right_width = 35
+        right_width = 57
 
         print(
             f"{HIDE_CURSOR}",
@@ -50,6 +52,9 @@ class BotOutput:
             f"Hole cards".ljust(left_width, '.')
             + f"{self.hole_cards}".rjust(right_width),
             f"{CLR}\n",
+            f"Hand details".ljust(left_width, '.')
+            + f"{self.hand}".rjust(right_width),
+            f"{CLR}\n",
             f"Board state".ljust(left_width, '.')
             + f"{self.board_state}".rjust(right_width),
             f"{CLR}\n",
@@ -63,7 +68,6 @@ class Bot:
     """The Ignition Poker Hold'em bot."""
 
     def __init__(self):
-        # self.window_capture = WindowCapture()
         self.window_capture = WindowCapture(YamlConf.window_name)
         self.window_manager = WindowManager('PokerBot', self.on_keypress)
         self.capture_manager = CaptureManager(self.window_capture, self.window_manager)
@@ -84,6 +88,7 @@ class Bot:
         self.hash_card_images()
         self.c_cards = []
         self.h_cards = []
+        self.hand: Hand | None = None
         self.init_elements()
         self.hand_events = HandEvents()
         self.hand_listener = HandListener(self)
@@ -239,6 +244,7 @@ class Bot:
         self.output.fps = self.capture_manager.fps_estimate
         self.output.hand_state = self.hand_events.current_state
         self.output.hole_cards = self.h_cards
+        self.output.hand = self.hand
         self.output.board_state = self.board_events.current_state
         self.output.community_cards = self.c_cards
         self.output.print()

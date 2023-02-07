@@ -17,6 +17,8 @@ import numpy as np
 from PIL import Image
 from loguru import logger
 
+from hand import Hand
+
 
 class Listener(ABC):
     @abstractmethod
@@ -112,6 +114,8 @@ class BoardListener(Listener):
         elif event.current_state == BoardState.RIVER:
             c4_rect = self.bot.window_elements['c_cards'][4]
             c4_img = cv2.resize(c4_rect.screenshot(), (35, 42))
+            if len(self.bot.c_cards) >= 5:
+                return
             try:
                 self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c4_img)])
             except KeyError:
@@ -159,6 +163,7 @@ class HandListener(Listener):
     def notify(self, event: 'HandEvents'):
         if event.current_state == HandState.SITTING_OUT:
             self.bot.h_cards = []
+            self.bot.hand = None
         elif event.current_state == HandState.PLAYING:
             c0_rect = self.bot.window_elements['h_cards'][0]
             c1_rect = self.bot.window_elements['h_cards'][1]
@@ -172,6 +177,7 @@ class HandListener(Listener):
                 self.bot.h_cards.append(self.bot.hashed_cards[self.get_hash(c1_img)])
             except KeyError:
                 self.bot.h_cards.append(self.get_best_match(c1_img))
+            self.bot.hand = Hand(self.bot.h_cards)
 
     def get_hash(self, img: np.ndarray):
         img = Image.fromarray(img)
