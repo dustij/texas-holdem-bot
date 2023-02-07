@@ -1,0 +1,499 @@
+2023-02-06 18:27:32.829 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (44596), thread 'MainThread' (34048):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x000001E9D58C3C70>
+    └ <bot.Bot object at 0x000001E9D5AC5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 173, in check_board_events
+    self.board_events.flop()
+    │    │            └ <function BoardEvents.flop at 0x000001E9D58C3250>
+    │    └ <events.BoardEvents object at 0x000001E9DC01CA30>
+    └ <bot.Bot object at 0x000001E9D5AC5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 77, in flop
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x000001E9D58C3520>
+    └ <events.BoardEvents object at 0x000001E9DC01CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x000001E9DC01CA60>]
+                     │                     └ <events.BoardEvents object at 0x000001E9DC01CA30>
+                     └ <events.BoardEvents object at 0x000001E9DC01CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x000001E9DC01CA60>]
+     │        │      │         │           └ <events.BoardEvents object at 0x000001E9DC01CA30>
+     │        │      │         └ <events.BoardListener object at 0x000001E9DC01CA60>
+     │        │      └ <events.BoardEvents object at 0x000001E9DC01CA30>
+     │        └ <function BoardListener.notify at 0x000001E9D58C30A0>
+     └ <events.BoardListener object at 0x000001E9DC01CA60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 48, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c0_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x000001E9D58C3130>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x000001E9DC01CA60>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x000001E9D5AC5AB0>
+    │    │   │       │      └ <events.BoardListener object at 0x000001E9DC01CA60>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x000001E9D5AC5AB0>
+    └ <events.BoardListener object at 0x000001E9DC01CA60>
+
+KeyError: array([[ True,  True,  True, False,  True,  True,  True, False],
+       [ True, False, False,  True,  True,  True, False, False],
+       [False, False,  True,  True,  True,  True,  True, False],
+       [False,  True,  True, False, False, False,  True, False],
+       [ True, False, False,  True, False,  True, False, False],
+       [False,  True,  True,  True, False, False,  True, False],
+       [ True, False,  True, False,  True,  True, False, False],
+       [False, False,  True,  True,  True, False, False, False]])
+2023-02-06 18:28:23.730 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (44384), thread 'MainThread' (44080):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x00000204C8C7FC70>
+    └ <bot.Bot object at 0x00000204C8E85AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 173, in check_board_events
+    self.board_events.flop()
+    │    │            └ <function BoardEvents.flop at 0x00000204C8C7F250>
+    │    └ <events.BoardEvents object at 0x00000204CF3CCA30>
+    └ <bot.Bot object at 0x00000204C8E85AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 77, in flop
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x00000204C8C7F520>
+    └ <events.BoardEvents object at 0x00000204CF3CCA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x00000204CF3CCA60>]
+                     │                     └ <events.BoardEvents object at 0x00000204CF3CCA30>
+                     └ <events.BoardEvents object at 0x00000204CF3CCA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x00000204CF3CCA60>]
+     │        │      │         │           └ <events.BoardEvents object at 0x00000204CF3CCA30>
+     │        │      │         └ <events.BoardListener object at 0x00000204CF3CCA60>
+     │        │      └ <events.BoardEvents object at 0x00000204CF3CCA30>
+     │        └ <function BoardListener.notify at 0x00000204C8C7F0A0>
+     └ <events.BoardListener object at 0x00000204CF3CCA60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 48, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c0_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x00000204C8C7F130>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x00000204CF3CCA60>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x00000204C8E85AB0>
+    │    │   │       │      └ <events.BoardListener object at 0x00000204CF3CCA60>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x00000204C8E85AB0>
+    └ <events.BoardListener object at 0x00000204CF3CCA60>
+
+KeyError: array([[ True,  True,  True, False,  True, False, False,  True],
+       [ True, False, False,  True,  True, False, False, False],
+       [False,  True,  True, False, False,  True, False, False],
+       [False,  True,  True, False, False, False,  True,  True],
+       [ True, False, False, False, False,  True, False, False],
+       [False,  True,  True, False,  True, False,  True,  True],
+       [False, False,  True,  True,  True,  True,  True, False],
+       [False, False,  True, False,  True,  True,  True,  True]])
+2023-02-06 19:43:18.180 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (46700), thread 'MainThread' (45516):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 202, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [255, 255, 255],
+    │    │    │    │                         [255...
+    │    │    │    └ <function Bot.poll_animation at 0x000002562184FC70>
+    │    │    └ <bot.Bot object at 0x0000025621843A60>
+    │    └ <function Bot.poll at 0x000002562184FBE0>
+    └ <bot.Bot object at 0x0000025621843A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 175, in poll
+    if not self.poll_times[func.__name__]['start'].get(name, False):
+           │    │          │                           └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000025621843A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+           └ <bot.Bot object at 0x0000025621843A60>
+
+KeyError: 'start'
+2023-02-06 19:44:05.631 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (45688), thread 'MainThread' (28492):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 202, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [255, 255, 255],
+    │    │    │    │                         [255...
+    │    │    │    └ <function Bot.poll_animation at 0x000002757C123C70>
+    │    │    └ <bot.Bot object at 0x000002757C113A60>
+    │    └ <function Bot.poll at 0x000002757C123BE0>
+    └ <bot.Bot object at 0x000002757C113A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 176, in poll
+    self.poll_times[func.__name__]['start'][name] = time.time()
+    │    │          │                       │       │    └ <built-in function time>
+    │    │          │                       │       └ <module 'time' (built-in)>
+    │    │          │                       └ 'hand'
+    │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000002757C113A60>>
+    │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+    └ <bot.Bot object at 0x000002757C113A60>
+
+KeyError: 'start'
+2023-02-06 19:46:22.082 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (45068), thread 'MainThread' (33876):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 203, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [255, 255, 255],
+    │    │    │    │                         [255...
+    │    │    │    └ <function Bot.poll_animation at 0x0000028060613C70>
+    │    │    └ <bot.Bot object at 0x0000028060603A60>
+    │    └ <function Bot.poll at 0x0000028060613BE0>
+    └ <bot.Bot object at 0x0000028060603A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 177, in poll
+    self.poll_times[func.__name__]['start'][name] = time.time()
+    │    │          │                       │       │    └ <built-in function time>
+    │    │          │                       │       └ <module 'time' (built-in)>
+    │    │          │                       └ 'hand'
+    │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000028060603A60>>
+    │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+    └ <bot.Bot object at 0x0000028060603A60>
+
+KeyError: 'start'
+2023-02-06 19:48:32.020 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (36736), thread 'MainThread' (25676):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 206, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [255, 255, 255],
+    │    │    │    │                         [255...
+    │    │    │    └ <function Bot.poll_animation at 0x0000025115263C70>
+    │    │    └ <bot.Bot object at 0x0000025115253A60>
+    │    └ <function Bot.poll at 0x0000025115263BE0>
+    └ <bot.Bot object at 0x0000025115253A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 181, in poll
+    self.poll_times[func.__name__]['duration'][name] = duration
+    │    │          │                          │       └ 1
+    │    │          │                          └ 'hand'
+    │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000025115253A60>>
+    │    └ defaultdict(<class 'dict'>, {'poll_animation': {'start': {'hand': 1675738112.0202107}}})
+    └ <bot.Bot object at 0x0000025115253A60>
+
+KeyError: 'duration'
+2023-02-06 19:49:22.154 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (38192), thread 'MainThread' (45844):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 212, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [255, 255, 255],
+    │    │    │    │                         [255...
+    │    │    │    └ <function Bot.poll_animation at 0x000002AB88C03C70>
+    │    │    └ <bot.Bot object at 0x000002AB88BF3A60>
+    │    └ <function Bot.poll at 0x000002AB88C03BE0>
+    └ <bot.Bot object at 0x000002AB88BF3A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 185, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000002AB88BF3A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {'duration': {'hand': 0}}})
+           └ <bot.Bot object at 0x000002AB88BF3A60>
+
+KeyError: 'start'
+2023-02-06 19:51:12.027 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (46672), thread 'MainThread' (44320):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 209, in run
+    self.poll(self.poll_animation, frame, 'board', 1)
+    │    │    │    │               └ array([[[202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         [202, 121,  25],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x0000020128EE3C70>
+    │    │    └ <bot.Bot object at 0x0000020128ED3A60>
+    │    └ <function Bot.poll at 0x0000020128EE3BE0>
+    └ <bot.Bot object at 0x0000020128ED3A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 180, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'board'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000020128ED3A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {'start': {'hand': 1675738272.005117}, 'duration': {'hand': 1}}})
+           └ <bot.Bot object at 0x0000020128ED3A60>
+
+KeyError: 'board'
+2023-02-06 19:54:01.993 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (44800), thread 'MainThread' (45184):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 202, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x000001A545BCFC70>
+    │    │    └ <bot.Bot object at 0x000001A545BC3A60>
+    │    └ <function Bot.poll at 0x000001A545BCFBE0>
+    └ <bot.Bot object at 0x000001A545BC3A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 175, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000001A545BC3A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+           └ <bot.Bot object at 0x000001A545BC3A60>
+
+KeyError: 'start'
+2023-02-06 19:54:31.015 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (45592), thread 'MainThread' (45132):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 202, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x000001F66614FC70>
+    │    │    └ <bot.Bot object at 0x000001F666143A60>
+    │    └ <function Bot.poll at 0x000001F66614FBE0>
+    └ <bot.Bot object at 0x000001F666143A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 175, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000001F666143A60>>
+           │    └ defaultdict(dict[dict], {'poll_animation': {}})
+           └ <bot.Bot object at 0x000001F666143A60>
+
+KeyError: 'start'
+2023-02-06 19:54:43.943 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (46140), thread 'MainThread' (46640):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 202, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x0000029B5C06FC70>
+    │    │    └ <bot.Bot object at 0x0000029B5C063A60>
+    │    └ <function Bot.poll at 0x0000029B5C06FBE0>
+    └ <bot.Bot object at 0x0000029B5C063A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 175, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000029B5C063A60>>
+           │    └ defaultdict(dict[dict[dict]], {'poll_animation': {}})
+           └ <bot.Bot object at 0x0000029B5C063A60>
+
+KeyError: 'start'
+2023-02-06 19:56:18.148 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (29216), thread 'MainThread' (38640):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 204, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x0000022BF19D3C70>
+    │    │    └ <bot.Bot object at 0x0000022BF19C3A60>
+    │    └ <function Bot.poll at 0x0000022BF19D3BE0>
+    └ <bot.Bot object at 0x0000022BF19C3A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 177, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x0000022BF19C3A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+           └ <bot.Bot object at 0x0000022BF19C3A60>
+
+KeyError: 'start'
+2023-02-06 19:57:07.144 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (29364), thread 'MainThread' (45212):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 206, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x000001D5A9ABFC70>
+    │    │    └ <bot.Bot object at 0x000001D5A9AB3A60>
+    │    └ <function Bot.poll at 0x000001D5A9ABFBE0>
+    └ <bot.Bot object at 0x000001D5A9AB3A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 179, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000001D5A9AB3A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {}})
+           └ <bot.Bot object at 0x000001D5A9AB3A60>
+
+KeyError: 'start'
+2023-02-06 19:57:46.750 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (45564), thread 'MainThread' (46100):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 205, in run
+    self.poll(self.poll_animation, frame, 'hand', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x00000270B9B4FC70>
+    │    │    └ <bot.Bot object at 0x00000270B9B43A60>
+    │    └ <function Bot.poll at 0x00000270B9B4FBE0>
+    └ <bot.Bot object at 0x00000270B9B43A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 178, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'hand'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x00000270B9B43A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {'start': False}})
+           └ <bot.Bot object at 0x00000270B9B43A60>
+
+TypeError: 'bool' object is not subscriptable
+2023-02-06 19:58:53.290 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (46204), thread 'MainThread' (44464):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 208, in run
+    self.poll(self.poll_animation, frame, 'board', 1)
+    │    │    │    │               └ array([[[254, 251, 251],
+    │    │    │    │                         [ 97,  89,  90],
+    │    │    │    │                         [ 51,  42,  43],
+    │    │    │    │                         ...,
+    │    │    │    │                         [ 12,  12,  12],
+    │    │    │    │                         [ 12...
+    │    │    │    └ <function Bot.poll_animation at 0x000002A594213C70>
+    │    │    └ <bot.Bot object at 0x000002A594203A60>
+    │    └ <function Bot.poll at 0x000002A594213BE0>
+    └ <bot.Bot object at 0x000002A594203A60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 179, in poll
+    if not self.poll_times[func.__name__]['start'][name]:
+           │    │          │                       └ 'board'
+           │    │          └ <bound method Bot.poll_animation of <bot.Bot object at 0x000002A594203A60>>
+           │    └ defaultdict(<class 'dict'>, {'poll_animation': {'start': {'hand': 1675738733.2343147}, 'duration': {'hand': 1}}})
+           └ <bot.Bot object at 0x000002A594203A60>
+
+KeyError: 'board'

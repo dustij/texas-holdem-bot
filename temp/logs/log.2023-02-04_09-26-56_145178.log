@@ -1,0 +1,738 @@
+2023-02-04 09:26:56.180 | WARNING  | managers:focus:57 - Could not focus window '$0.02/$0.05 no Limit Hold'em', does not exist
+2023-02-04 09:27:19.695 | ERROR    | __main__:<module>:23 - An error has been caught in function '<module>', process 'MainProcess' (144952), thread 'MainThread' (155376):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 23, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 38, in run
+    self.ignition_window.focus()
+    │    │               └ <function IgnitionWindow.focus at 0x000001F66D1AD630>
+    │    └ <managers.IgnitionWindow object at 0x000001F66D1B0490>
+    └ <bot.Bot object at 0x000001F66D1B08B0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 53, in focus
+    self._client.moveTo(0, 0)
+    │    │       └ <function Win32Window.moveTo at 0x000001F6655BB250>
+    │    └ Win32Window(hWnd=3016982)
+    └ <managers.IgnitionWindow object at 0x000001F66D1B0490>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pywinctl\_pywinctl_win.py", line 584, in moveTo
+    win32gui.MoveWindow(self._hWnd, newLeft, newTop, int(self.width), int(self.height), True)
+    │        │          │    │      │        │           │    │           │    └ <property object at 0x000001F6653425C0>
+    │        │          │    │      │        │           │    │           └ Win32Window(hWnd=3016982)
+    │        │          │    │      │        │           │    └ <property object at 0x000001F665342570>
+    │        │          │    │      │        │           └ Win32Window(hWnd=3016982)
+    │        │          │    │      │        └ 0
+    │        │          │    │      └ 0
+    │        │          │    └ 3016982
+    │        │          └ Win32Window(hWnd=3016982)
+    │        └ <built-in function MoveWindow>
+    └ <module 'win32gui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\win32\\win32gui.pyd'>
+
+pywintypes.error: (5, 'MoveWindow', 'Access is denied.')
+2023-02-04 09:30:04.538 | ERROR    | __main__:<module>:23 - An error has been caught in function '<module>', process 'MainProcess' (155756), thread 'MainThread' (151564):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 23, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 38, in run
+    self.ignition_window.focus()
+    │    │               └ <function IgnitionWindow.focus at 0x0000021A70B1D630>
+    │    └ <managers.IgnitionWindow object at 0x0000021A70B20490>
+    └ <bot.Bot object at 0x0000021A70B208B0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 53, in focus
+    self._client.moveTo(0, 0)
+    │    │       └ <function Win32Window.moveTo at 0x0000021A68F2B250>
+    │    └ Win32Window(hWnd=3016982)
+    └ <managers.IgnitionWindow object at 0x0000021A70B20490>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pywinctl\_pywinctl_win.py", line 584, in moveTo
+    win32gui.MoveWindow(self._hWnd, newLeft, newTop, int(self.width), int(self.height), True)
+    │        │          │    │      │        │           │    │           │    └ <property object at 0x0000021A68D02520>
+    │        │          │    │      │        │           │    │           └ Win32Window(hWnd=3016982)
+    │        │          │    │      │        │           │    └ <property object at 0x0000021A68D024D0>
+    │        │          │    │      │        │           └ Win32Window(hWnd=3016982)
+    │        │          │    │      │        └ 0
+    │        │          │    │      └ 0
+    │        │          │    └ 3016982
+    │        │          └ Win32Window(hWnd=3016982)
+    │        └ <built-in function MoveWindow>
+    └ <module 'win32gui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\win32\\win32gui.pyd'>
+
+pywintypes.error: (5, 'MoveWindow', 'Access is denied.')
+2023-02-04 09:36:35.775 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (151772), thread 'MainThread' (156248):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 36, in run
+    self.ignition_window.focus()
+    │    │               └ <function IgnitionWindow.focus at 0x000001A99C8C1630>
+    │    └ <managers.IgnitionWindow object at 0x000001A99C8BC550>
+    └ <bot.Bot object at 0x000001A99C8BC970>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 54, in focus
+    self._client.resize()
+    │    │       └ <function Win32Window.resize at 0x000001A994CCB0A0>
+    │    └ Win32Window(hWnd=3016982)
+    └ <managers.IgnitionWindow object at 0x000001A99C8BC550>
+
+TypeError: Win32Window.resize() missing 2 required positional arguments: 'widthOffset' and 'heightOffset'
+2023-02-04 09:36:50.168 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (150592), thread 'MainThread' (150052):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 46, in run
+    self.capture_manager.exit_frame()
+    │    │               └ <function CaptureManager.exit_frame at 0x000001F2CD7D1C60>
+    │    └ <managers.CaptureManager object at 0x000001F2CD7CC5E0>
+    └ <bot.Bot object at 0x000001F2CD7CC970>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 137, in exit_frame
+    self.preview_window_manager.show(self._frame)
+    │    │                      │    │    └ array([], shape=(0, 0, 3), dtype=uint8)
+    │    │                      │    └ <managers.CaptureManager object at 0x000001F2CD7CC5E0>
+    │    │                      └ <function PreviewWindow.show at 0x000001F2CD7D1870>
+    │    └ <managers.PreviewWindow object at 0x000001F2CD7CC700>
+    └ <managers.CaptureManager object at 0x000001F2CD7CC5E0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 81, in show
+    cv2.imshow(self.window_name, frame)
+    │   │      │    │            └ array([], shape=(0, 0, 3), dtype=uint8)
+    │   │      │    └ 'PokerBot'
+    │   │      └ <managers.PreviewWindow object at 0x000001F2CD7CC700>
+    │   └ <built-in function imshow>
+    └ <module 'cv2' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\cv2\\__init__.py'>
+
+cv2.error: OpenCV(4.7.0) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow'
+
+2023-02-04 10:51:26.851 | WARNING  | managers:focus:61 - Could not focus window '$0.02/$0.05 No Limit Hold'em', does not exist
+2023-02-05 10:54:47.926 | WARNING  | managers:focus:61 - Could not focus window '$0.02/$0.05 No Limit Hold'em', does not exist
+2023-02-05 10:54:59.281 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (22272), thread 'MainThread' (22280):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 37, in run
+    self.ignition_window.focus()
+    │    │               └ <function IgnitionWindow.focus at 0x000001DBD9AE1750>
+    │    └ <managers.IgnitionWindow object at 0x000001DBE199E650>
+    └ <bot.Bot object at 0x000001DBE199E680>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 53, in focus
+    self._client.moveTo(0, 0)
+    │    │       └ <function Win32Window.moveTo at 0x000001DBD9ADFB50>
+    │    └ Win32Window(hWnd=591694)
+    └ <managers.IgnitionWindow object at 0x000001DBE199E650>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pywinctl\_pywinctl_win.py", line 584, in moveTo
+    win32gui.MoveWindow(self._hWnd, newLeft, newTop, int(self.width), int(self.height), True)
+    │        │          │    │      │        │           │    │           │    └ <property object at 0x000001DBE19A9490>
+    │        │          │    │      │        │           │    │           └ Win32Window(hWnd=591694)
+    │        │          │    │      │        │           │    └ <property object at 0x000001DBE19A9440>
+    │        │          │    │      │        │           └ Win32Window(hWnd=591694)
+    │        │          │    │      │        └ 0
+    │        │          │    │      └ 0
+    │        │          │    └ 591694
+    │        │          └ Win32Window(hWnd=591694)
+    │        └ <built-in function MoveWindow>
+    └ <module 'win32gui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\win32\\win32gui.pyd'>
+
+pywintypes.error: (5, 'MoveWindow', 'Access is denied.')
+2023-02-05 23:42:33.248 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (22248), thread 'MainThread' (27716):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 98, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x000002C1D1CF25F0>
+    └ <bot.Bot object at 0x000002C1D1CDBE20>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 83, in set_board_state
+    if not np.any(px.screenshot()) == 255:
+           │  │   │  └ <function Rectangle.screenshot at 0x000002C1D1CF2170>
+           │  │   └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+           │  └ <function any at 0x000002C1D1013A30>
+           └ <module 'numpy' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\numpy\\__init__.py'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\rectangle.py", line 169, in screenshot
+    img.shape = (self.height, self.width, 4)
+    │   │        │    │       │    └ <property object at 0x000002C1D1D7BFB0>
+    │   │        │    │       └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   │        │    └ <property object at 0x000002C1D1D80040>
+    │   │        └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   └ <attribute 'shape' of 'numpy.ndarray' objects>
+    └ array([0, 0], dtype=uint8)
+
+ValueError: cannot reshape array of size 2 into shape (0,0,4)
+2023-02-05 23:45:16.793 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (32192), thread 'MainThread' (27816):
+Traceback (most recent call last):
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\rectangle.py", line 170, in screenshot
+    img.shape = (self.height, self.width, 4)
+    │   │        │    │       │    └ <property object at 0x000001C6528C7DD0>
+    │   │        │    │       └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   │        │    └ <property object at 0x000001C6528C7E20>
+    │   │        └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   └ <attribute 'shape' of 'numpy.ndarray' objects>
+    └ array([0, 0], dtype=uint8)
+
+ValueError: cannot reshape array of size 2 into shape (0,0,4)
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 98, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x000001C652832560>
+    └ <bot.Bot object at 0x000001C652849480>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 83, in set_board_state
+    if not np.any(px.screenshot()) == 255:
+           │  │   │  └ <function Rectangle.screenshot at 0x000001C652832050>
+           │  │   └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+           │  └ <function any at 0x000001C651B53A30>
+           └ <module 'numpy' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\numpy\\__init__.py'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\rectangle.py", line 172, in screenshot
+    img.shape = (self.height, self.width)
+    │   │        │    │       │    └ <property object at 0x000001C6528C7DD0>
+    │   │        │    │       └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   │        │    └ <property object at 0x000001C6528C7E20>
+    │   │        └ Rectangle(name=None, x=496, y=220, width=0, height=0)
+    │   └ <attribute 'shape' of 'numpy.ndarray' objects>
+    └ array([0, 0], dtype=uint8)
+
+ValueError: cannot reshape array of size 2 into shape (0,0)
+2023-02-06 00:01:28.559 | ERROR    | __main__:<module>:25 - An error has been caught in function '<module>', process 'MainProcess' (30896), thread 'MainThread' (28156):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 25, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 101, in run
+    pyautogui.moveTo(rect.center)
+    │         │      │    └ <property object at 0x0000020CE86E5990>
+    │         │      └ Rectangle(name=None, x=514, y=211, width=49, height=59)
+    │         └ <function moveTo at 0x0000020CE85C8160>
+    └ <module 'pyautogui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\pyautogui\\__init__.py'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pyautogui\__init__.py", line 597, in wrapper
+    failSafeCheck()
+    └ <function failSafeCheck at 0x0000020CE85C8DC0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pyautogui\__init__.py", line 1722, in failSafeCheck
+    raise FailSafeException(
+          └ <class 'pyautogui.FailSafeException'>
+
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2023-02-06 00:03:37.288 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (27612), thread 'MainThread' (28416):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 101, in run
+    pyautogui.moveTo(rect.center)
+    │         │      │    └ <property object at 0x0000025744D25800>
+    │         │      └ Rectangle(name=None, x=395, y=211, width=49, height=59)
+    │         └ <function moveTo at 0x0000025744C08160>
+    └ <module 'pyautogui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\pyautogui\\__init__.py'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pyautogui\__init__.py", line 597, in wrapper
+    failSafeCheck()
+    └ <function failSafeCheck at 0x0000025744C08DC0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\pyautogui\__init__.py", line 1722, in failSafeCheck
+    raise FailSafeException(
+          └ <class 'pyautogui.FailSafeException'>
+
+pyautogui.FailSafeException: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2023-02-06 00:06:48.294 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (27692), thread 'MainThread' (31756):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 97, in run
+    pyautogui.moveTo(self.window_capture.rect.top_left())
+    │         │      │    │              │    └ <property object at 0x0000025F54435530>
+    │         │      │    │              └ Rectangle(name=MainWindow, x=8, y=31, width=960, height=560)
+    │         │      │    └ <window.WindowCapture object at 0x0000025F54417F70>
+    │         │      └ <bot.Bot object at 0x0000025F544178B0>
+    │         └ <function moveTo at 0x0000025F542D8160>
+    └ <module 'pyautogui' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\pyautogui\\__init__.py'>
+
+TypeError: 'Point' object is not callable
+2023-02-06 08:00:13.228 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (32940), thread 'MainThread' (36788):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 99, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x000001B3CDADE8C0>
+    └ <bot.Bot object at 0x000001B3CDB45F90>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 83, in set_board_state
+    print(f"\r{px.screenshot()[px.global_top_left]}", end='')
+
+IndexError: index 504 is out of bounds for axis 0 with size 1
+2023-02-06 08:01:21.702 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (34092), thread 'MainThread' (35496):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 99, in run
+    self.set_board_state(frame)
+    │    │               └ array([[[ 1,  1, 39],
+    │    │                         [ 1,  1, 40],
+    │    │                         [ 1,  1, 39],
+    │    │                         ...,
+    │    │                         [ 1,  1, 43],
+    │    │                         [ 1,  1, 42],
+    │    │                   ...
+    │    └ <function Bot.set_board_state at 0x000002319182E8C0>
+    └ <bot.Bot object at 0x0000023191895F90>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 83, in set_board_state
+    print(f"\r{frame[px.global_top_left]}", end='')
+
+IndexError: index 564 is out of bounds for axis 0 with size 560
+2023-02-06 08:01:42.108 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (1320), thread 'MainThread' (30676):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 99, in run
+    self.set_board_state(frame)
+    │    │               └ array([[[ 1,  1, 39],
+    │    │                         [ 1,  1, 40],
+    │    │                         [ 1,  1, 39],
+    │    │                         ...,
+    │    │                         [ 1,  1, 43],
+    │    │                         [ 1,  1, 42],
+    │    │                   ...
+    │    └ <function Bot.set_board_state at 0x000002750EFAE8C0>
+    └ <bot.Bot object at 0x000002750F015F90>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 83, in set_board_state
+    print(f"\r{frame[px.top_left]}", end='')
+
+IndexError: index 612 is out of bounds for axis 0 with size 560
+2023-02-06 09:11:21.621 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (26752), thread 'MainThread' (30264):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 126, in run
+    frame = self.capture_manager.frame
+            │    │               └ <property object at 0x000001FADE163330>
+            │    └ <managers.CaptureManager object at 0x000001FADE3FC640>
+            └ <bot.Bot object at 0x000001FADE3FC520>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\managers.py", line 63, in frame
+    self._frame = self._capture.get_screenshot()
+    │    │        │    │        └ <function WindowCapture.get_screenshot at 0x000001FADE17EB00>
+    │    │        │    └ <window.WindowCapture object at 0x000001FADE3FC340>
+    │    │        └ <managers.CaptureManager object at 0x000001FADE3FC640>
+    │    └ None
+    └ <managers.CaptureManager object at 0x000001FADE3FC640>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\window.py", line 190, in get_screenshot
+    saveDC.BitBlt((0, 0), (self.w, self.h), mfcDC, (self.offset_left, self.offset_top),
+    │      │               │    │  │    │   │       │    │            │    └ 31
+    │      │               │    │  │    │   │       │    │            └ <window.WindowCapture object at 0x000001FADE3FC340>
+    │      │               │    │  │    │   │       │    └ 8
+    │      │               │    │  │    │   │       └ <window.WindowCapture object at 0x000001FADE3FC340>
+    │      │               │    │  │    │   └ object 'PyCDC' - assoc is 000001FADD755038, vi=<None>
+    │      │               │    │  │    └ 560
+    │      │               │    │  └ <window.WindowCapture object at 0x000001FADE3FC340>
+    │      │               │    └ 960
+    │      │               └ <window.WindowCapture object at 0x000001FADE3FC340>
+    │      └ <method 'BitBlt' of 'PyCDC' objects>
+    └ object 'PyCDC' - assoc is 000001FADD755058, vi=<None>
+
+win32ui.error: BitBlt failed
+2023-02-06 16:03:12.292 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (41052), thread 'MainThread' (28440):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 131, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x0000020C9A8E5750>
+    └ <bot.Bot object at 0x0000020C9A813E50>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 154, in set_board_state
+    self.board_event.preflop()
+    │    │           └ <function BaseAdaptor.process_events.<locals>.event_meta_method.<locals>.f at 0x0000020C9A8E4EE0>
+    │    └ <events.BoardEvent object at 0x0000020C9A813310>
+    └ <bot.Bot object at 0x0000020C9A813E50>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\state_machine\orm\base.py", line 51, in f
+    raise InvalidStateTransition
+          └ <class 'state_machine.models.InvalidStateTransition'>
+
+state_machine.models.InvalidStateTransition
+2023-02-06 16:04:18.326 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (32036), thread 'MainThread' (41472):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 131, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x0000014AFF5856C0>
+    └ <bot.Bot object at 0x0000014AFF556D70>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 148, in set_board_state
+    self.board_event.turn()
+    │    │           └ <function BaseAdaptor.process_events.<locals>.event_meta_method.<locals>.f at 0x0000014AFF585000>
+    │    └ <events.BoardEvent object at 0x0000014AFF555D20>
+    └ <bot.Bot object at 0x0000014AFF556D70>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\state_machine\orm\base.py", line 51, in f
+    raise InvalidStateTransition
+          └ <class 'state_machine.models.InvalidStateTransition'>
+
+state_machine.models.InvalidStateTransition
+2023-02-06 16:05:14.026 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (27888), thread 'MainThread' (20464):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 131, in run
+    self.set_board_state()
+    │    └ <function Bot.set_board_state at 0x0000013EEFCF56C0>
+    └ <bot.Bot object at 0x0000013EEFCC6E00>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 151, in set_board_state
+    self.board_event.flop()
+    │    │           └ <function BaseAdaptor.process_events.<locals>.event_meta_method.<locals>.f at 0x0000013EEFCF4EE0>
+    │    └ <events.BoardEvent object at 0x0000013EEFCC5D20>
+    └ <bot.Bot object at 0x0000013EEFCC6E00>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\state_machine\orm\base.py", line 66, in f
+    _adaptor.update(self, event_description.to_state.name)
+    │        │      │     │                 └ (<state_machine.models.State object at 0x0000013EEFCC4820>, <state_machine.models.State object at 0x0000013EEFCC4850>, <state...
+    │        │      │     └ <state_machine.models.Event object at 0x0000013EEFCC68C0>
+    │        │      └ <events.BoardEvent object at 0x0000013EEFCC5D20>
+    │        └ <function NullAdaptor.update at 0x0000013EEFC33D00>
+    └ <state_machine.orm.NullAdaptor object at 0x0000013EEFCC7190>
+
+AttributeError: 'tuple' object has no attribute 'name'
+2023-02-06 18:14:02.407 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (43620), thread 'MainThread' (43128):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x000002DD9650FAC0>
+    └ <bot.Bot object at 0x000002DD96715A80>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 173, in check_board_events
+    self.board_events.flop()
+    │    │            └ <function BoardEvents.flop at 0x000002DD9650F0A0>
+    │    └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+    └ <bot.Bot object at 0x000002DD96715A80>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 66, in flop
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x000002DD9650F370>
+    └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 93, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x000002DD9CCDCB20>]
+                     │                     └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+                     └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 93, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x000002DD9CCDCB20>]
+     │        │      │         │           └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+     │        │      │         └ <events.BoardListener object at 0x000002DD9CCDCB20>
+     │        │      └ <events.BoardEvents object at 0x000002DD9CCDCAF0>
+     │        └ <function BoardListener.notify at 0x000002DD9650EEF0>
+     └ <events.BoardListener object at 0x000002DD9CCDCB20>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 46, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c0_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x000002DD9650EF80>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x000002DD9CCDCB20>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x000002DD96715A80>
+    │    │   │       │      └ <events.BoardListener object at 0x000002DD9CCDCB20>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x000002DD96715A80>
+    └ <events.BoardListener object at 0x000002DD9CCDCB20>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 51, in get_hash
+    return imagehash.phash(img)
+           │         │     └ array([[[255, 255, 255],
+           │         │               [255, 255, 255],
+           │         │               [255, 255, 255],
+           │         │               ...,
+           │         │               [255, 255, 255],
+           │         │               [255...
+           │         └ <function phash at 0x000002DD96480E50>
+           └ <module 'imagehash' from 'C:\\Users\\dusti\\PycharmProjects\\TexasHoldEm-Bot\\venv\\lib\\site-packages\\imagehash\\__init__.py'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\venv\lib\site-packages\imagehash\__init__.py", line 274, in phash
+    image = image.convert('L').resize((img_size, img_size), ANTIALIAS)
+            │                          │         │          └ <Resampling.LANCZOS: 1>
+            │                          │         └ 32
+            │                          └ 32
+            └ array([[[255, 255, 255],
+                      [255, 255, 255],
+                      [255, 255, 255],
+                      ...,
+                      [255, 255, 255],
+                      [255...
+
+AttributeError: 'numpy.ndarray' object has no attribute 'convert'
+2023-02-06 18:22:50.417 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (43160), thread 'MainThread' (37772):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x000001A5588EFD90>
+    └ <bot.Bot object at 0x000001A558AF5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 171, in check_board_events
+    self.board_events.turn()
+    │    │            └ <function BoardEvents.turn at 0x000001A5588EF400>
+    │    └ <events.BoardEvents object at 0x000001A55F03CA30>
+    └ <bot.Bot object at 0x000001A558AF5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 82, in turn
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x000001A5588EF640>
+    └ <events.BoardEvents object at 0x000001A55F03CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x000001A55F03CA60>]
+                     │                     └ <events.BoardEvents object at 0x000001A55F03CA30>
+                     └ <events.BoardEvents object at 0x000001A55F03CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x000001A55F03CA60>]
+     │        │      │         │           └ <events.BoardEvents object at 0x000001A55F03CA30>
+     │        │      │         └ <events.BoardListener object at 0x000001A55F03CA60>
+     │        │      └ <events.BoardEvents object at 0x000001A55F03CA30>
+     │        └ <function BoardListener.notify at 0x000001A5588EF1C0>
+     └ <events.BoardListener object at 0x000001A55F03CA60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 54, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c3_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x000001A5588EF250>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x000001A55F03CA60>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x000001A558AF5AB0>
+    │    │   │       │      └ <events.BoardListener object at 0x000001A55F03CA60>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x000001A558AF5AB0>
+    └ <events.BoardListener object at 0x000001A55F03CA60>
+
+KeyError: array([[ True,  True,  True, False,  True,  True, False, False],
+       [ True, False, False,  True,  True, False, False, False],
+       [False,  True,  True,  True,  True, False, False, False],
+       [False,  True,  True, False, False, False, False,  True],
+       [ True, False, False,  True, False,  True, False, False],
+       [False,  True,  True,  True,  True, False,  True,  True],
+       [False, False, False,  True,  True,  True,  True, False],
+       [False, False,  True, False,  True,  True,  True, False]])
+2023-02-06 18:23:40.608 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (43880), thread 'MainThread' (41428):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x0000025D200CFD90>
+    └ <bot.Bot object at 0x0000025D202D5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 173, in check_board_events
+    self.board_events.flop()
+    │    │            └ <function BoardEvents.flop at 0x0000025D200CF370>
+    │    └ <events.BoardEvents object at 0x0000025D2685CA30>
+    └ <bot.Bot object at 0x0000025D202D5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 77, in flop
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x0000025D200CF640>
+    └ <events.BoardEvents object at 0x0000025D2685CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x0000025D2685CA60>]
+                     │                     └ <events.BoardEvents object at 0x0000025D2685CA30>
+                     └ <events.BoardEvents object at 0x0000025D2685CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x0000025D2685CA60>]
+     │        │      │         │           └ <events.BoardEvents object at 0x0000025D2685CA30>
+     │        │      │         └ <events.BoardListener object at 0x0000025D2685CA60>
+     │        │      └ <events.BoardEvents object at 0x0000025D2685CA30>
+     │        └ <function BoardListener.notify at 0x0000025D200CF1C0>
+     └ <events.BoardListener object at 0x0000025D2685CA60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 48, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c0_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x0000025D200CF250>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x0000025D2685CA60>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x0000025D202D5AB0>
+    │    │   │       │      └ <events.BoardListener object at 0x0000025D2685CA60>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x0000025D202D5AB0>
+    └ <events.BoardListener object at 0x0000025D2685CA60>
+
+KeyError: array([[ True,  True,  True, False,  True,  True, False, False],
+       [ True, False, False,  True,  True, False, False, False],
+       [False, False,  True,  True,  True, False, False, False],
+       [False,  True,  True, False,  True, False,  True, False],
+       [ True, False, False,  True, False,  True, False, False],
+       [False,  True,  True,  True, False, False,  True,  True],
+       [ True,  True,  True, False, False,  True, False, False],
+       [False,  True,  True,  True,  True, False, False,  True]])
+2023-02-06 18:26:10.028 | ERROR    | __main__:<module>:22 - An error has been caught in function '<module>', process 'MainProcess' (44420), thread 'MainThread' (41256):
+Traceback (most recent call last):
+
+> File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\main.py", line 22, in <module>
+    Bot().run()
+    └ <class 'bot.Bot'>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 155, in run
+    self.check_board_events()
+    │    └ <function Bot.check_board_events at 0x0000021CC35EFC70>
+    └ <bot.Bot object at 0x0000021CC37F5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\bot.py", line 173, in check_board_events
+    self.board_events.flop()
+    │    │            └ <function BoardEvents.flop at 0x0000021CC35EF250>
+    │    └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+    └ <bot.Bot object at 0x0000021CC37F5AB0>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 77, in flop
+    self.notify()
+    │    └ <function BoardEvents.notify at 0x0000021CC35EF520>
+    └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in notify
+    [listener.notify(self) for listener in self.listeners]
+                     │                     │    └ [<events.BoardListener object at 0x0000021CC9D5CA60>]
+                     │                     └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+                     └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 104, in <listcomp>
+    [listener.notify(self) for listener in self.listeners]
+     │        │      │         │           │    └ [<events.BoardListener object at 0x0000021CC9D5CA60>]
+     │        │      │         │           └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+     │        │      │         └ <events.BoardListener object at 0x0000021CC9D5CA60>
+     │        │      └ <events.BoardEvents object at 0x0000021CC9D5CA30>
+     │        └ <function BoardListener.notify at 0x0000021CC35EF0A0>
+     └ <events.BoardListener object at 0x0000021CC9D5CA60>
+
+  File "C:\Users\dusti\PycharmProjects\TexasHoldEm-Bot\src\events.py", line 48, in notify
+    self.bot.c_cards.append(self.bot.hashed_cards[self.get_hash(c0_img)])
+    │    │   │       │      │    │   │            │    │        └ array([[[255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  ...,
+    │    │   │       │      │    │   │            │    │                  [255, 255, 255],
+    │    │   │       │      │    │   │            │    │                  [255...
+    │    │   │       │      │    │   │            │    └ <function BoardListener.get_hash at 0x0000021CC35EF130>
+    │    │   │       │      │    │   │            └ <events.BoardListener object at 0x0000021CC9D5CA60>
+    │    │   │       │      │    │   └ {array([[ True, False,  True, False,  True,  True, False, False],
+    │    │   │       │      │    │            [ True, False, False,  True,  True,  True, False, Fa...
+    │    │   │       │      │    └ <bot.Bot object at 0x0000021CC37F5AB0>
+    │    │   │       │      └ <events.BoardListener object at 0x0000021CC9D5CA60>
+    │    │   │       └ <method 'append' of 'list' objects>
+    │    │   └ []
+    │    └ <bot.Bot object at 0x0000021CC37F5AB0>
+    └ <events.BoardListener object at 0x0000021CC9D5CA60>
+
+KeyError: array([[ True,  True,  True, False,  True,  True, False, False],
+       [ True, False, False,  True,  True,  True, False, False],
+       [False, False,  True,  True,  True, False,  True,  True],
+       [False,  True,  True, False, False, False,  True,  True],
+       [ True, False, False,  True, False,  True, False, False],
+       [False,  True,  True, False, False, False,  True,  True],
+       [ True, False, False, False,  True,  True, False, False],
+       [False, False,  True,  True,  True,  True, False, False]])
